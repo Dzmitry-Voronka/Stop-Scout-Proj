@@ -61,7 +61,7 @@ export default function DeparturesScreen() {
       <View style={[styles.center, { backgroundColor: colors.background }]}>
         <Text style={[styles.message, { color: colors.text }]}>{ERROR_MESSAGE}</Text>
         <Pressable
-          style={[styles.retry, { backgroundColor: colors.tint }]}
+          style={[styles.retry, { backgroundColor: colors.accent }]}
           onPress={retry}
           accessibilityRole="button"
           accessibilityLabel={RETRY_LABEL}

@@ -26,7 +26,7 @@ export default function DepartureCard({ departure }: DepartureCardProps) {
       accessible
       accessibilityLabel={`Linia ${departure.routeNumber.value}, kierunek ${departure.headsign}, odjazd ${time}, ${departure.delay.label}`}
     >
-      <View style={[styles.route, { backgroundColor: colors.tint }]}>
+      <View style={[styles.route, { backgroundColor: colors.accent }]}>
         <Text style={styles.routeText}>{departure.routeNumber.value}</Text>
       </View>
       <View style={styles.details}>

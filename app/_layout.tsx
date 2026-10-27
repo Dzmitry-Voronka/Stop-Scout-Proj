@@ -1,4 +1,5 @@
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 
 import { useColorScheme } from '@/components/useColorScheme';
 
@@ -15,6 +16,8 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       </Stack>
+      {/* "auto": light clock on a dark screen and the other way round, so it is always readable. */}
+      <StatusBar style="auto" />
     </ThemeProvider>
   );
 }
